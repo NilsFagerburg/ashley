@@ -170,6 +170,10 @@ public class Engine {
 	public ImmutableArray<Entity> getEntitiesFor (Family family) {
 		return registerFamily(family);
 	}
+	
+	public Array<Entity> getEntities(){
+		return entities;
+	}
 
 	/**
 	 * Adds an {@link EntityListener}. The listener will be notified every time an entity is added/removed to/from the engine.
